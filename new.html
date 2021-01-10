@@ -32,11 +32,10 @@
 <body>
     <h1>Adding Quotepack</h1>
     <h2>You should be redirected to Shortcuts soon!</h2>
-    <meta http-equiv="refresh" content="0; id="input" URL='https://citium.tk'">
     <script>
         const queryString = new URLSearchParams(window.location.search);
 	const quote = queryString.get('input');
-        document.getElementById('input').innerHTML = `shortcuts://run-shortcut?name=Citium&input={input}` 
+	window.location.assign("shortcuts://run-shortcut?name=Citium&input={input}")
     </script>
 </body>
 

@@ -35,7 +35,7 @@
     <script>
         const queryString = new URLSearchParams(window.location.search);
 	const quote = queryString.get('input');
-	window.location.assign("shortcuts://run-shortcut?name=Citium&input={input}")
+	window.location.assign("shortcuts://run-shortcut?name=Citium&input=${input}")
     </script>
 </body>
 

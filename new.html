@@ -34,7 +34,7 @@
     <h2>You should be redirected to Shortcuts soon!</h2>
     <script>
         const queryString = new URLSearchParams(window.location.search);
-	const quote = queryString.get('input');
+	const input = queryString.get('input');
 	window.location.assign("shortcuts://run-shortcut?name=Citium&input=${input}")
     </script>
 </body>

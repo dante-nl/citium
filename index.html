@@ -34,12 +34,8 @@
     <h2 id="author">Something went wrong on the author side</h2>
     <script>
         const queryString = new URLSearchParams(window.location.search);
-        if const quote = queryString.get('quote'): {
-        	document.getElementById('quote').innerHTML = `${quote}`
-	}
-	else: {
-		document.getElementById('quote').innerHTML = `No quote`
-	}
+	const quote = queryString.get('quote');
+        document.getElementById('quote').innerHTML = `${quote}`
 		
 	const author = queryString.get('author');
         document.getElementById('author').innerHTML = `${author}` 
